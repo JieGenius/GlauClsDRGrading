@@ -7,14 +7,14 @@ GlauClsDRGrading 是 [眼科大模型](https://github.com/JieGenius/OculiChatDA)
 
 ## 环境安装
 
-"""
+```
 conda create -n GlauClsDRGrading python=3.10
 conda activate GlauClsDRGrading
 pip install -r requirements.txt
 pip install wandb
 pip install openmim && mim install -e .
 wandb login 
-"""
+```
 
 ## 数据准备
 准备Refuge数据集
@@ -44,7 +44,7 @@ python tools/dataset_converters/refuge_aptos.py
 
 ## 训练
 ```bash
-
+python tools/train.py confis/convnext/convnext-tiny_b32_refuge_aptos.py --amp --auto-scale-lr
 ```
 
 ## 部署
