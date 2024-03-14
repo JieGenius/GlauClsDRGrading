@@ -4,9 +4,9 @@ import torch
 
 
 def main():
-    cfg = Config.fromfile("../configs/convnext/convnext-tiny_b32_refuge_aptos.py")
+    cfg = Config.fromfile("../configs/convnext/convnext-tiny_b32_refuge_aptos_amd_pm.py")
     model = MODELS.build(cfg.model)
-    model.load_state_dict(torch.load("../work_dirs/convnext-tiny_b32_refuge_aptos/epoch_48.pth")["state_dict"])
+    model.load_state_dict(torch.load("../work_dirs/convnext-tiny_b32_refuge_aptos_amd_pm/epoch_50.pth")["state_dict"])
     input = torch.randn(1, 3, 448, 448)
     print(model(input))
     with torch.no_grad():
