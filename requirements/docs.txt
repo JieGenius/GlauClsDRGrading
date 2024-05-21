@@ -8,3 +8,4 @@ sphinx-notfound-page
 sphinx-tabs
 sphinxcontrib-jquery
 tabulate
+requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
