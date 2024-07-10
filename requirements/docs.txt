@@ -8,3 +8,4 @@ sphinx-notfound-page
 sphinx-tabs
 sphinxcontrib-jquery
 tabulate
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
